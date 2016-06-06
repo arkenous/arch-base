@@ -1,0 +1,13 @@
+language: python
+sudo: required
+services:
+  - docker
+
+env:
+  - TARGET_CONTAINER_ID=container-arch-base
+
+before_script:
+  - docker build -t arch-base latest/
+
+script:
+  - docker run -d --name $TARGET_CONTAINER_ID arch-base
