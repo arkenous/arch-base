@@ -24,4 +24,4 @@ RUN pacman -Syu --noconfirm util-linux &> /dev/null
 RUN useradd -m -d /home/user -s /bin/bash -g users -G users,wheel user
 
 RUN pacman -Scc --noconfirm > /dev/null
-ONBUILD RUN pacman -Syu --noconfirm > /dev/null
+ONBUILD RUN pacman -Syu --noconfirm &> /dev/null
