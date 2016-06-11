@@ -4,3 +4,4 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/trileg/arch-base.svg?maxAge=2592000)](https://hub.docker.com/r/trileg/arch-base/)
 [![AMA](https://img.shields.io/badge/ask%20me-anything-0e7fc0.svg)](https://github.com/trileg/ama)
 [![GitHub release](https://img.shields.io/github/release/trileg/arch-base.svg?maxAge=2592000)](https://github.com/trileg/arch-base/releases/latest)
+[![license](https://img.shields.io/github/license/trileg/arch-base.svg?maxAge=2592000)](LICENSE)
