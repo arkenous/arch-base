@@ -21,7 +21,7 @@ RUN sudo pacman -Syu --noconfirm git > /dev/null
 RUN curl -L -o /tmp/cower.tar.gz --silent https://aur.archlinux.org/cgit/aur.git/snapshot/cower.tar.gz && \
   tar -zxvf /tmp/cower.tar.gz -C /tmp/ > /dev/null && \
   cd /tmp/cower && \
-  gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53 2> /dev/null && \
+  gpg --recv-keys 1EB2638FF56C0C53 2> /dev/null && \
   export PATH=/usr/bin/core_perl:$PATH && \
   makepkg -sri --noconfirm &> /dev/null && \
   rm -rf /tmp/cower* && \
