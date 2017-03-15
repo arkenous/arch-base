@@ -7,4 +7,4 @@ env:
   - TARGET_CONTAINER_ID=container-arch-base
 
 script:
-  - docker build -t arch-base latest/
+  - travis_retry docker build -t arch-base latest/
