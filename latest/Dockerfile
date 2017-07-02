@@ -1,6 +1,6 @@
-## -*- docker-image-name: "trileg/arch-base" -*-
+## -*- docker-image-name: "k3nsuk3/arch-base" -*-
 FROM archlinuxjp/archlinux:latest
-MAINTAINER Kensuke Kosaka <k@trileg.net>
+MAINTAINER Kensuke Kosaka <k@k3n.link>
 
 RUN pacman -Syy --noconfirm > /dev/null
 
