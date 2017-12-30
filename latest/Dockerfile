@@ -6,7 +6,7 @@ RUN pacman -Syy --noconfirm
 
 # Add normal user who can escalate to root without a password
 COPY patches/sudoers.patch /tmp/sudoers.patch
-RUN pacman -Syu --noconfirm base-devel ;; \
+RUN pacman -Syu --noconfirm base-devel ; \
   patch -u /etc/sudoers < /tmp/sudoers.patch && rm -f /tmp/sudoers.patch && \
   chown root:root /etc/sudoers && chmod 440 /etc/sudoers && \
   useradd -m -d /home/user -s /bin/bash -G wheel user
