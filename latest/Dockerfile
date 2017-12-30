@@ -1,6 +1,6 @@
 ## -*- docker-image-name: "k3nsuk3/arch-base" -*-
 FROM archlinuxjp/archlinux:latest
-MAINTAINER Kensuke Kosaka <k@k3n.link>
+MAINTAINER Kensuke Kousaka <k@k3n.link>
 
 RUN pacman -Syy --noconfirm > /dev/null
 
