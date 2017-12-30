@@ -9,7 +9,7 @@ COPY patches/sudoers.patch /tmp/sudoers.patch
 RUN pacman -Syu --noconfirm base-devel &> /dev/null && \
   patch -u /etc/sudoers < /tmp/sudoers.patch && rm -f /tmp/sudoers.patch && \
   chown root:root /etc/sudoers && chmod 440 /etc/sudoers && \
-  useradd -m -d /home/user -s /bin/bash -g users -G users,wheel user
+  useradd -m -d /home/user -s /bin/bash -G wheel user
 
 USER root
 
